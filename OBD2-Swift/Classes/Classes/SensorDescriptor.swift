@@ -18,7 +18,7 @@ import Foundation
  consideration as we build our decoding table.
  */
 
-struct SensorDescriptor {
+public struct SensorDescriptor {
   init(  _ pid : Int8,
          _ description : String,
          _ shortDescription : String,
@@ -44,17 +44,17 @@ struct SensorDescriptor {
     self.convertFunction = convertFunction
   }
   
-  var pid : Int8
-  var description : String
-  var shortDescription : String
-  var metricUnit : String
-  var minMetricValue : Int
-  var maxMetricValue : Int
-  var imperialUnit : String
-  var minImperialValue : Int
-  var maxImperialValue : Int
+  public var pid : Int8
+  public var description : String
+  public var shortDescription : String
+  public var metricUnit : String
+  public var minMetricValue : Int
+  public var maxMetricValue : Int
+  public var imperialUnit : String
+  public var minImperialValue : Int
+  public var maxImperialValue : Int
   /* A function pointer definition for calculation functions */
-  var calcFunction : ((Data)->(Float))?
+  public var calcFunction : ((Data)->(Float))?
   /* A function pointer definition for conversion functions */
-  var convertFunction : ((Float)->(Float))?
+  public var convertFunction : ((Float)->(Float))?
 }

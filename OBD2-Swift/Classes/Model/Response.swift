@@ -12,8 +12,8 @@ public struct Response : Hashable, Equatable {
   var timestamp : Date
   var mode : Mode = .none
   var pid : UInt8 = 0
-  var data : Data?
-  var rawData : [UInt8] = []
+  public var data : Data?
+  public var rawData : [UInt8] = []
   
   public var strigDescriptor : String?
   

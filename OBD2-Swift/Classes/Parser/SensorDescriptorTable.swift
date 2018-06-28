@@ -18,7 +18,7 @@ let VOID_F : ((Float)->(Float))? = nil
 let INT_MAX = Int.max
 
 
-let SensorDescriptorTable : [SensorDescriptor] = [
+public let SensorDescriptorTable : [SensorDescriptor] = [
     //MARK:- PID 0x00
     SensorDescriptor(0x00,
                      "Supported PIDs $00",  //  Description

@@ -22,6 +22,8 @@ open class OBD2 {
     
     private var scanner : Scanner
     
+    public var sensorTable = SensorDescriptorTable
+    
     public var stateChanged: StateChangeCallback? {
         didSet {
             scanner.stateChanged = stateChanged
